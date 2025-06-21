@@ -3,10 +3,10 @@
 
 set -e
 
-echo -e "\n\e[1;36m╔════════════════════════════════════════════════════╗"
-echo -e "║            GENIEACS AUTO INSTALLER V1             ║"
-echo -e "║                by Steven Montero ☕               ║"
-echo -e "╚════════════════════════════════════════════════════╝\e[0m\n"
+echo -e "\n\033[1;32m╔═══════════════════════════════════════╗"
+echo -e "║    GENIEACS AUTO INSTALLER V1        ║"
+echo -e "║        by Steven Montero ☕          ║"
+echo -e "╚═══════════════════════════════════════╝\033[0m\n"
 
 log_step() {
     STEP=$1
