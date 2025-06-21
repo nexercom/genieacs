@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+echo -e "\n\033[1;32m┌────────────────────────────────────────────┐"
+echo -e "│         GENIEACS AUTO INSTALLER V1         │"
+echo -e "│           by Steven Montero ☕             │"
+echo -e "└────────────────────────────────────────────┘\033[0m\n"
+
 # Instala Node.js 14.x
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -79,4 +84,7 @@ for service in cwmp nbi fs ui; do
   sudo systemctl start genieacs-$service
 done
 
-echo "✅ Instalación completada. Accede a la UI: http://<tu_ip>:3000"
+echo "✅ Instalación completada."
+echo -e "✔ Servicios iniciados correctamente"
+echo -e "✔ Accede vía: http://<IP_DEL_SERVIDOR>:3000 (usuario: admin / contraseña: admin)"
+echo -e "☕ Agradece a Steven Montero con un café :)\033[0m"
